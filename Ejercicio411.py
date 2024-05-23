@@ -10,3 +10,4 @@ nota5 = float (input ("Nota E "))
 print ("Sus calificaciones fueron ", nota1, nota2, nota3, nota4, nota5)
 promedio = (nota1 + nota2 + nota3 + nota4 + nota5)/5
 print ("Su promedio general es ", promedio)
+
