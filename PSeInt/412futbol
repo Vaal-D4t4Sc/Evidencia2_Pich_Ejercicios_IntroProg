@@ -1,0 +1,11 @@
+Algoritmo campeonato
+	Escribir "Puntos acumulados por tu equipo en el campeonato."
+	Escribir "¿Cuántas derrotas?"
+	Leer derrota
+	Escribir "¿Cuántas victorias?"
+	Leer victoria
+	Escribir  "¿Cuántos empates?"
+	Leer empate
+	puntos = empate+victoria*3
+	Escribir  "El equipo acumula ", puntos, " puntos"
+FinAlgoritmo
