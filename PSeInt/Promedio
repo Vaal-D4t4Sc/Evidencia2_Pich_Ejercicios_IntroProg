@@ -1,0 +1,11 @@
+Algoritmo Promedio
+	Escribir "Ingrese calificaciones del estudiante"
+	Leer nota1
+	Leer nota2
+	leer nota3
+	Leer nota4
+	Leer nota5
+	Escribir "Obtuvo las calificaciones: ", nota1, " ", nota2, " ", nota3
+	promedio=(nota1+nota2+nota3+nota4+nota5)/5
+	Escribir "Tu promedio general es ", promedio
+FinAlgoritmo
