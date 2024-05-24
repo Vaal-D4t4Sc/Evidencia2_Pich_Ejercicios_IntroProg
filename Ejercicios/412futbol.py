@@ -11,7 +11,7 @@ victoria = int(input ("Partidos ganados: "))
 derrotas = int(input ("Partidos perdidos: "))
 puntos = empate+victoria*3
 print ("Tu equipo acumula ", puntos, " puntos")
-if puntos>=45:
+if puntos>=145:
     print ("Felicidades, tu equipo lidera el campeonato")
 else:
     print ("Buena suerte")
