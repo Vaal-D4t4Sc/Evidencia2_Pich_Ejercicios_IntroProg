@@ -5,20 +5,36 @@
 
 print ("OFERTON Leche a $1000")
 print ("Descuento por compra al por mayor")
-
 leche = int(1000)
+
 compra = int (input ("¿Cuantas leche va a comprar? "))
 
 descuento1 = leche*0.90
+
 descuento2 = leche*0.85
+
 
 if compra >= 12 and compra <=23:
     print ("Te aplicaremos un descuento del 10%")
-    print ("Total: ", compra*descuento1)
+    total = compra*descuento1
+    print ("Total: ", total)
+    
+
 elif compra >=24:
     print ("Te aplicaremos un descuento del 15%")
-    print ("Total: $", compra*descuento2)
-else:
-    print ("Total: $", compra*leche)
+    total = compra*descuento2
+    print ("Total: $", total)
 
+else:
+    total = compra*leche
+    print ("Total: $", total)
+
+jubilado = int(input("¿Es jubilado? Ingrese 1 de corresponder "))
+
+if jubilado ==1:
+    descuentojubilado = total*0.90
+    print ("Debe abonar ", descuentojubilado)
+else:
+    print ("Debe abonar ", total)
+     
 print ("Gracias por su compra")
