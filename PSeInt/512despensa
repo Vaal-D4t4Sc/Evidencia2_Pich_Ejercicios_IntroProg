@@ -1,0 +1,44 @@
+Algoritmo Despensa
+    // Definir variables
+    Definir leche, compra, descuento1, descuento2, total, jubilado Como Entero
+
+    // Mostrar el precio de la leche
+    Escribir "OFERTON Leche a $1000"
+    Escribir "Descuento por compra al por mayor"
+
+    // Solicitar al usuario la cantidad de leche a comprar
+    Escribir "¿Cuantas leche va a comprar? "
+    Leer compra
+
+    // Calcular los descuentos
+    descuento1 <- 1000 * 0.90
+    descuento2 <- 1000 * 0.85
+
+    // Aplicar descuentos según la cantidad comprada
+    Si compra >= 12 Y compra <= 23 Entonces
+        Escribir "Te aplicaremos un descuento del 10%"
+        total <- compra * descuento1
+        Escribir "Total: ", total
+    Sino
+        Si compra >= 24 Entonces
+            Escribir "Te aplicaremos un descuento del 15%"
+            total <- compra * descuento2
+            Escribir "Total: $", total
+        Sino
+            total <- compra * 1000
+            Escribir "Total: $", total
+        FinSi
+    FinSi
+
+    // Verificar si el comprador es jubilado
+    Escribir "¿Es jubilado? Ingrese 1 de corresponder "
+    Leer jubilado
+
+    // Aplicar descuento adicional si el comprador es jubilado
+    Si jubilado == 1 Entonces
+        total <- total * 0.90
+        Escribir "Debe abonar ", total
+    FinSi
+
+    Escribir "Gracias por su compra"
+FinAlgoritmo
