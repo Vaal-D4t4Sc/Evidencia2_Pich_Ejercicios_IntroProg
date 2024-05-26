@@ -1,0 +1,28 @@
+Algoritmo Rendimiento
+	Definir num_estudiantes, suma_calif, calif, promedio Como Real
+	Definir i Como entero
+	
+	Escribir "Ingrese el numero de estudiantes: "
+	Leer num_estudiantes
+	
+	Para i=1 Hasta num_estudiantes Con Paso 1 Hacer
+		Escribir "Ingrese la calificacion del estudiante ", i
+		Leer calif
+		suma_calif=suma_calif+calif
+	FinPara
+	
+	promedio = suma_calif/num_estudiantes
+	Escribir "La calificaion del aula es: ", promedio
+	SI promedio >8 Entonces
+		Escribir "Rendimiento elevado. Felicitaciones."
+	SiNo 
+		Si promedio >=6 Entonces
+			Escribir "Rendimiento aceptable. Buen trabajo."
+		SiNo
+			Escribir "Rendimiento bajo. Debes esforzarte mas."
+		FinSi
+		
+	FinSi
+	
+	
+FinAlgoritmo
