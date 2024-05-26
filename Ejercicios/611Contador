@@ -1,3 +1,5 @@
+# Mostrar los números desde el 0 al número solicitado al usuario (input)
+
 num = 0
 c=0
 
