@@ -1,3 +1,5 @@
+//Mostrar los números desde el 0 al número solicitado al usuario (input)
+
 Algoritmo ContadorMaximo
 	Definir contador, num1 Como Real
 	
